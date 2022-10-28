@@ -70,6 +70,8 @@ article .body {
 h2 {
   font-family: Syne, sans-serif;
   font-weight: 600;
+  padding: 0px;
+  margin: 0px;
 }
 
 .item {
@@ -98,4 +100,23 @@ button:hover {
   border-radius: 5px;
   border: 1px solid #16123f;
   background-color: #ffe26a;
+}
+
+#warning {
+  font-family: Syne, sans-serif;
+  font-weight: 600;
+  font-size: 150%;
+  padding: 10px;
+  margin: 10px;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+}
+
+form {
+  font-family: Syne, sans-serif;
+  padding: 10px;
+  margin: 10px;
 }
