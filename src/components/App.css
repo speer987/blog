@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Syne:wght@600;700&display=swap");
 
 .App {
   display: grid;
@@ -13,7 +13,6 @@ header {
   justify-content: space-between;
   background-color: #16123f;
   color: white;
-  text-shadow: 2px 2px #54e5c6e3;
   grid-column: 1 / span 2;
   padding: 10px 5px;
   font-family: "Syne", sans-serif;
@@ -42,7 +41,7 @@ article {
 
 nav {
   background-image: linear-gradient(to bottom right, #d5f2ca, #54e5c6e3);
-  font-family: Syne, sans-serif;
+  font-family: "Syne", sans-serif;
   font-weight: 600;
 }
 
@@ -51,15 +50,14 @@ nav p:hover {
 }
 
 article .date {
-  font-style: italic;
-  font-family: inter, sans-serif;
-  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 article .body {
   white-space: break-spaces;
-  font-family: inter, sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 20px;
 }
 
 .error {
