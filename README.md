@@ -2,7 +2,9 @@
 
 Welcome to my blog!
 
-<DESCRIPTION ABOUT BLOG>
+People who worked on this project: Saarah Peer
+
+### <DESCRIPTION ABOUT BLOG>
 
 This blog includes features such as:
 

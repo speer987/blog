@@ -3,10 +3,10 @@
 .App {
   display: grid;
   grid-template-areas:
-    'header header header'
-    'nav article about';
+    "header header"
+    "nav article";
   grid-template-rows: min-content auto;
-  grid-template-columns: 20vw auto 20vw;
+  grid-template-columns: 20vw auto;
   height: 100vh;
   overflow: scroll;
 }
@@ -27,10 +27,12 @@ h3 {
   color: indianred;
 }
 
-.about {
+/* .about {
   grid-area: about;
-  background-color: white;
-}
+  border-radius: indianred;
+  padding: 10px;
+  margin: 10px;
+} */
 
 header {
   grid-area: header;
@@ -44,7 +46,8 @@ header {
   font-size: 48px;
 }
 
-p, h2 {
+p,
+h2 {
   /* border-radius: 5px;
   border: 1px solid #16123f; */
   padding: 10px;
@@ -71,7 +74,7 @@ article {
 }
 
 nav {
-  background-color: white;
+  background-color: indianred;
   font-family: "Syne", sans-serif;
   font-weight: 600;
   grid-area: nav;
@@ -101,6 +104,7 @@ article .body {
 h2 {
   font-family: Syne, sans-serif;
   font-weight: 600;
+  color: indianred;
   /* text-align: center; */
 }
 
@@ -113,11 +117,11 @@ h2 {
   margin-right: 15px;
   padding: 10px;
   border-radius: 5px;
-  border: 1.5px solid mistyrose;
-  color:indianred;
-  background-color: indianred;
+  border: 1.5px solid indianred;
+  color: indianred;
+  background-color: white;
   box-shadow: 5px 5px 0px 0px mistyrose;
-  color: white;
+  color: indianred;
   transition: 0.25s ease-in;
   word-wrap: break-word;
 }
@@ -153,7 +157,7 @@ button {
 }
 
 article {
-  background-image: linear-gradient(90deg,indianred, white, indianred);
+  background-image: linear-gradient(90deg, indianred, white, indianred);
   grid-area: article;
 }
 
@@ -172,4 +176,3 @@ section {
   height: fit-content;
   word-wrap: break-word;
 }
-

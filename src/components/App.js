@@ -50,12 +50,12 @@ export default function App() {
         <Article article={article} />
       )}
 
-      <div className="about">
+      {/* <div className="about">
         <h3 className="centered">Welcome!</h3>
         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" id="profile-pic" />
         <h3 className="centered">I'm Lorem Ipsum</h3>
         <p>Lorem ipsum dolor sit amen</p>
-      </div>
+      </div> */}
     </div>
   );
 }
