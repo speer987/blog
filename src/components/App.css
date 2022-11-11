@@ -11,20 +11,9 @@
   overflow: scroll;
 }
 
-img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  justify-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px indianred solid;
-}
-
 h3 {
   font-family: Syne;
-  color: indianred;
+  color: #7d4972;
 }
 
 /* .about {
@@ -34,16 +23,24 @@ h3 {
   margin: 10px;
 } */
 
+#buttons {
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+  justify-content: flex-end;
+  text-align: right;
+  width: 80%;
+  float: right;
+}
+
 header {
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  background-color: mistyrose;
-  color: indianred;
-  padding: 10px 5px;
+  background-color: #7d4972;
+  color: white;
   font-family: "Syne", sans-serif;
   font-weight: 700;
   font-size: 48px;
+  padding: 10px;
 }
 
 p,
@@ -74,7 +71,7 @@ article {
 }
 
 nav {
-  background-color: indianred;
+  background-color: #bb70a5;
   font-family: "Syne", sans-serif;
   font-weight: 600;
   grid-area: nav;
@@ -104,7 +101,7 @@ article .body {
 h2 {
   font-family: Syne, sans-serif;
   font-weight: 600;
-  color: indianred;
+  color: #7d4972;
   /* text-align: center; */
 }
 
@@ -117,11 +114,10 @@ h2 {
   margin-right: 15px;
   padding: 10px;
   border-radius: 5px;
-  border: 1.5px solid indianred;
-  color: indianred;
-  background-color: white;
-  box-shadow: 5px 5px 0px 0px mistyrose;
-  color: indianred;
+  color: white;
+  border: 1.5px solid #f8e5e8;
+  background-color: #7d4972;
+  box-shadow: 5px 5px 0px 0px #f8e5e8;
   transition: 0.25s ease-in;
   word-wrap: break-word;
 }
@@ -138,9 +134,9 @@ button:hover {
 button {
   padding: 10px;
   margin: 10px;
-  border: 1.5px solid mistyrose;
-  background-color: indianred;
-  box-shadow: 5px 5px 0px 0px white;
+  border: 1.5px solid #f8e5e8;
+  background-color: #bb70a5;
+  box-shadow: 5px 5px 0px 0px #f8e5e8;
   border-radius: 5px;
   font-family: Syne, sans-serif;
   font-size: 16px;
@@ -157,7 +153,8 @@ button {
 }
 
 article {
-  background-image: linear-gradient(90deg, indianred, white, indianred);
+  background-image: url("/src/images/img.jpg");
+  background-size: cover;
   grid-area: article;
 }
 
@@ -171,7 +168,7 @@ section {
   background-color: white;
   padding: 10px;
   margin: 10px;
-  border: 2px indianred solid;
+  border: 2px #7d4972 solid;
   border-radius: 5px;
   height: fit-content;
   word-wrap: break-word;
