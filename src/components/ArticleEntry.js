@@ -19,9 +19,9 @@ export default function ArticleEntry({ addArticle }) {
     <div>
       <form onSubmit={submit}>
         {error && <p className="error">{error}</p>}
-        Title
+        Title:
         <input value={title} onChange={(e) => setTitle(e.target.value)} />
-        Body
+        Body:
         <textarea
           rows="8"
           value={body}

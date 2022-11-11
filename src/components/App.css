@@ -153,8 +153,6 @@ button {
 }
 
 article {
-  background-image: url("/src/images/img.jpg");
-  background-size: cover;
   grid-area: article;
 }
 
@@ -172,4 +170,32 @@ section {
   border-radius: 5px;
   height: fit-content;
   word-wrap: break-word;
+}
+
+body {
+  background-image: url("/src/images/img.jpg");
+  background-size: cover;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  height: 25px;
+  border-radius: 3.5px;
+  border: 0px;
+  outline: 2px #bb70a5 solid;
+  padding: 5px;
+  margin: 10px;
+}
+
+form input {
+  font-family: "Syne", sans-serif;
+}
+
+form textarea {
+  height: 50vh;
+  font-family: "Montserrat", sans-serif;
+}
+form input:focus {
+  outline: 2px #7d4972 solid;
 }
