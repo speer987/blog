@@ -14,7 +14,9 @@ import {
 } from "firebase/firestore";
 
 export async function createArticle({ title, body }) {
-  const data = { title, body, date: Timestamp.now() };
+  // https://stackoverflow.com/a/6078873 - Learned a bit about how to make date readable here.
+  const readableDate = new Date(Timestamp.now().seconds * 1000);
+  const data = { title, body, date: readableDate };
   const docRef = await addDoc(collection(db, "articles"), data);
   return { id: docRef.id, ...data };
 }

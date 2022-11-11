@@ -13,6 +13,8 @@
 
 h3 {
   font-family: Syne;
+  padding: 0px;
+  margin: 0px;
   color: #7d4972;
 }
 
@@ -36,7 +38,7 @@ h3 {
 header {
   grid-area: header;
   background-color: #7d4972;
-  color: white;
+  color: #fdf5f6;
   font-family: "Syne", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -82,7 +84,11 @@ nav p:hover {
 }
 
 article .date {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  color: #bb70a5;
+  padding: 0px;
+  padding-left: 10px;
 }
 
 article .body {
@@ -93,9 +99,10 @@ article .body {
 }
 
 .error {
-  background-color: red;
-  color: gold;
+  background-color: #7d4972;
+  color: yellow;
   padding: 5px;
+  border-radius: 5px;
 }
 
 h2 {
@@ -114,7 +121,7 @@ h2 {
   margin-right: 15px;
   padding: 10px;
   border-radius: 5px;
-  color: white;
+  color: #fffefe;
   border: 1.5px solid #f8e5e8;
   background-color: #7d4972;
   box-shadow: 5px 5px 0px 0px #f8e5e8;
@@ -140,7 +147,7 @@ button {
   border-radius: 5px;
   font-family: Syne, sans-serif;
   font-size: 16px;
-  color: white;
+  color: #fffefe;
   transition: 0.25s ease-in;
 }
 
@@ -163,13 +170,15 @@ form {
 }
 
 section {
-  background-color: white;
+  background-color: #fffefed2;
   padding: 10px;
   margin: 10px;
   border: 2px #7d4972 solid;
   border-radius: 5px;
   height: fit-content;
   word-wrap: break-word;
+  overflow: scroll;
+  height: 82vh;
 }
 
 body {
@@ -179,13 +188,15 @@ body {
 
 form input,
 form textarea {
-  width: 80%;
-  height: 25px;
+  width: 97%;
+  height: min-content;
   border-radius: 3.5px;
   border: 0px;
   outline: 2px #bb70a5 solid;
   padding: 5px;
   margin: 10px;
+  background-color: #fffefe;
+  font-size: 16px;
 }
 
 form input {
@@ -193,9 +204,12 @@ form input {
 }
 
 form textarea {
-  height: 50vh;
+  height: min-content;
   font-family: "Montserrat", sans-serif;
+  height: 57vh;
 }
-form input:focus {
+
+form input:focus,
+form textarea:focus {
   outline: 2px #7d4972 solid;
 }
