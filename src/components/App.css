@@ -8,54 +8,92 @@
   grid-template-rows: min-content auto;
   grid-template-columns: 20vw auto;
   height: 100vh;
+}
+
+.App,
+section {
   overflow: scroll;
 }
 
+h2,
 h3 {
-  font-family: Syne;
-  padding: 0px;
-  margin: 0px;
   color: #7d4972;
 }
 
-/* .about {
-  grid-area: about;
-  border-radius: indianred;
-  padding: 10px;
-  margin: 10px;
-} */
+h2,
+h3,
+#warning,
+form,
+header,
+nav,
+article .date,
+button,
+form input {
+  font-family: "Syne", sans-serif;
+}
+
+header,
+.error,
+.item {
+  background-color: #7d4972;
+}
+
+h3 {
+  margin: 0px;
+}
+
+h3,
+article .date {
+  padding: 0px;
+}
 
 #buttons {
   display: flex;
   flex-direction: row;
-  word-wrap: break-word;
   justify-content: flex-end;
   text-align: right;
   width: 80%;
   float: right;
 }
 
+header,
+p,
+h2,
+form,
+.item,
+button,
+#warning,
+section {
+  padding: 10px;
+}
+
 header {
   grid-area: header;
-  background-color: #7d4972;
   color: #fdf5f6;
-  font-family: "Syne", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  padding: 10px;
 }
 
 p,
-h2 {
-  /* border-radius: 5px;
-  border: 1px solid #16123f; */
-  padding: 10px;
+h2,
+button,
+#warning,
+form,
+section,
+form input,
+form textarea,
+.item {
   margin: 10px;
-  /* background-color: rgb(255, 255, 255); */
+}
+
+.error,
+.item,
+button,
+section {
+  border-radius: 5px;
 }
 
 form {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -73,8 +111,6 @@ article {
 }
 
 nav {
-  background-color: #bb70a5;
-  font-family: "Syne", sans-serif;
   font-weight: 600;
   grid-area: nav;
 }
@@ -84,32 +120,38 @@ nav p:hover {
 }
 
 article .date {
-  font-family: "Syne", sans-serif;
-  font-size: 18px;
   color: #bb70a5;
-  padding: 0px;
   padding-left: 10px;
+}
+
+article .body,
+form textarea {
+  font-family: "Montserrat", sans-serif;
 }
 
 article .body {
   white-space: break-spaces;
-  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
   line-height: 20px;
 }
 
-.error {
-  background-color: #7d4972;
-  color: yellow;
+.error,
+form input,
+form textarea {
   padding: 5px;
-  border-radius: 5px;
+}
+
+section,
+#buttons {
+  word-wrap: break-word;
+}
+
+.error {
+  color: yellow;
 }
 
 h2 {
-  font-family: Syne, sans-serif;
   font-weight: 600;
-  color: #7d4972;
-  /* text-align: center; */
 }
 
 .centered {
@@ -117,19 +159,13 @@ h2 {
 }
 
 .item {
-  margin: 10px;
   margin-right: 15px;
-  padding: 10px;
-  border-radius: 5px;
   color: #fffefe;
-  border: 1.5px solid #f8e5e8;
-  background-color: #7d4972;
-  box-shadow: 5px 5px 0px 0px #f8e5e8;
   transition: 0.25s ease-in;
-  word-wrap: break-word;
 }
 
-#username {
+#username,
+article .date {
   font-size: 18px;
 }
 
@@ -138,46 +174,40 @@ button:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-button {
-  padding: 10px;
-  margin: 10px;
-  border: 1.5px solid #f8e5e8;
+button,
+nav {
   background-color: #bb70a5;
+}
+
+.item,
+button {
   box-shadow: 5px 5px 0px 0px #f8e5e8;
-  border-radius: 5px;
-  font-family: Syne, sans-serif;
+  border: 1.5px solid #f8e5e8;
+}
+
+button,
+form input,
+form textarea {
   font-size: 16px;
+}
+
+button {
   color: #fffefe;
   transition: 0.25s ease-in;
 }
 
 #warning {
-  font-family: Syne, sans-serif;
   font-weight: 600;
   font-size: 150%;
-  padding: 10px;
-  margin: 10px;
 }
 
 article {
   grid-area: article;
 }
 
-form {
-  font-family: Syne, sans-serif;
-  padding: 10px;
-  margin: 10px;
-}
-
 section {
   background-color: #fffefed2;
-  padding: 10px;
-  margin: 10px;
   border: 2px #7d4972 solid;
-  border-radius: 5px;
-  height: fit-content;
-  word-wrap: break-word;
-  overflow: scroll;
   height: 82vh;
 }
 
@@ -193,19 +223,10 @@ form textarea {
   border-radius: 3.5px;
   border: 0px;
   outline: 2px #bb70a5 solid;
-  padding: 5px;
-  margin: 10px;
   background-color: #fffefe;
-  font-size: 16px;
-}
-
-form input {
-  font-family: "Syne", sans-serif;
 }
 
 form textarea {
-  height: min-content;
-  font-family: "Montserrat", sans-serif;
   height: 57vh;
 }
 
