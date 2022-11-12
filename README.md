@@ -2,8 +2,8 @@
 
 Welcome to my blog, which is hosted on Firebase!
 
-** Link to Firebase Hosting for this project: [here](https://console.firebase.google.com/project/blog-e59ab/overview) **
-** Link to my Web App: [here](https://blog-e59ab.web.app)**
+**Link to Firebase Hosting for this project: [here](https://console.firebase.google.com/project/blog-e59ab/overview)**
+**Link to my Web App: [here](https://blog-e59ab.web.app)**
 
 People who worked on this project: Saarah Peer
 
